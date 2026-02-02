@@ -1,0 +1,9 @@
+body{margin:0;font-family:Arial;background:#0b0f1a;color:#fff;text-align:center}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center}
+.btn{padding:12px 20px;background:#00c8ff;color:#000;text-decoration:none;border-radius:8px}
+.login-body{background:#000;height:100vh;display:flex;justify-content:center;align-items:center}
+.login-card{background:rgba(0,0,0,.85);padding:30px;border-radius:15px;width:300px}
+input,button{width:100%;padding:10px;margin-top:10px}
+.secondary{background:none;border:1px solid #00c8ff;color:#00c8ff}
+.google-btn{background:#fff;color:#000}
+.map{width:90%;max-width:800px}

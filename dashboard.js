@@ -1,0 +1,3 @@
+import { auth, db } from './firebase.js';
+import { doc,getDoc } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js';
+auth.onAuthStateChanged(async u=>{if(!u)location.href='login.html';const s=await getDoc(doc(db,'users',u.uid));const d=s.data();welcome.textContent=u.email;tier.textContent='Tier: '+d.tier;if(d.tier!=='pro')upgrade.innerHTML='Mejora a PRO';if(d.role==='admin')admin.innerHTML='<a href=admin.html>Admin</a>';});
